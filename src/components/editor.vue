@@ -49,6 +49,7 @@ export default {
     }
   },
   mounted () {
+    console.log('editor');
     window.addEventListener('keypress', (e) => {
       if (e.keyCode == 32) {
         this.isPlaying ? this.stop() : this.start()

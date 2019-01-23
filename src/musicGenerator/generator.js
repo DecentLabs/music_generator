@@ -1,6 +1,15 @@
 import Tone from 'tone'
 import generateMelodies from './generateMelodies.js'
 
+if (Tone.context.state !== 'running') {
+  Tone.context.resume();
+}
+
+document.documentElement.addEventListener("mousedown", function() {
+  if (Tone.context.state !== 'running') {
+  Tone.context.resume();
+}})
+
 const MOODS = {
   soft: {
     pitches2: [48, 50, 55, 57, 58, 60, 62, 63, 65, 67, 72, 84],
