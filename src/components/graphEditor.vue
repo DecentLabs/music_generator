@@ -339,4 +339,10 @@ export default {
   width: 100%;
   height: calc(100vh / 3 + 13px);
 }
+
+@media (max-width: 768px) {
+  #canvas {
+    min-height: 300px;
+  }
+}
 </style>

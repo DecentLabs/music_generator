@@ -105,11 +105,13 @@ export default {
   text-align: center;
   padding: 30px;
   padding-top: 15px;
+  height: auto;
 }
 .container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  flex-wrap: wrap-reverse;
   width: 100%;
   margin-bottom: 40px;
 }
@@ -127,21 +129,34 @@ button {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
+  min-width: 310px;
 }
 .right {
-  /*padding-left: 20px;*/
-  /*margin-top: 25px;*/
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  min-width: 310px;
 }
 label {
   margin-bottom: 10px;
-  /*margin-top: 10px;*/
   display: inline-block;
 }
 input {
   margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .right, .left {
+    width: 100%;
+  }
+  .right {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 375px) {
+  #editor {
+    padding: 5px;
+  }
 }
 </style>

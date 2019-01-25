@@ -18,9 +18,6 @@ html, body {
   height: 100%;
   width: 100%;
 }
-body {
-
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,8 +29,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  height: auto;
   /* background-image: url('./assets/bg2.jpg'); */
   background-size: cover;
   background-blend-mode: multiply;
